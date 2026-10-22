@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>رزومه | [نام و نام خانوادگی] – دبیر فیزیک</title>
+<meta name="description" content="رزومهٔ علمی و حرفه‌ای دبیر فیزیک: تحصیلات، سوابق تدریس، پروژه‌های آموزشی و مهارت‌ها">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f8fa; --card:#ffffff; --ink:#12263a; --muted:#566678;
+  --rule:#d6dee6; --accent:#1a6a8d; --accent-soft:#e3f0f6; --brass:#a9772b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Vazirmatn",Tahoma,sans-serif;background:var(--paper);color:var(--ink);line-height:2;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:4px}
+
+.page{max-width:1120px;margin:0 auto;padding:32px 20px 64px;display:grid;grid-template-columns:300px 1fr;gap:40px;align-items:start}
+
+/* Sidebar */
+aside{position:sticky;top:24px;background:var(--ink);color:#e8eef4;border-radius:14px;padding:32px 26px}
+.avatar{width:128px;height:128px;border-radius:50%;margin:0 auto 18px;background:#1f3a54;border:3px solid var(--brass);display:grid;place-items:center;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.avatar span{font-size:44px;font-weight:800;color:var(--brass)}
+aside h1{font-size:22px;font-weight:800;text-align:center;line-height:1.7}
+aside .role{text-align:center;color:#a9c3d6;font-size:14px;margin-bottom:20px}
+.wave{display:block;width:100%;height:26px;margin:6px 0 18px}
+.contact{list-style:none;font-size:14px}
+.contact li{display:flex;gap:10px;padding:7px 0;border-top:1px solid #243f58}
+.contact b{font-weight:500;color:#8fb0c7;min-width:58px}
+.contact a{color:#fff;word-break:break-all}
+.nav{margin-top:22px;display:flex;flex-direction:column;gap:2px}
+.nav a{color:#cfe0ec;padding:5px 12px;border-radius:8px;font-size:14px}
+.nav a:hover{background:#1f3a54;text-decoration:none}
+.btn{display:block;margin-top:22px;text-align:center;background:var(--brass);color:#fff;border:0;width:100%;padding:9px;border-radius:9px;font:inherit;font-weight:700;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+
+/* Main */
+main section{margin-bottom:44px}
+h2{font-size:22px;font-weight:800;padding-bottom:8px;margin-bottom:20px;border-bottom:2px solid var(--ink)}
+.lead{font-size:18px;line-height:2.1;color:var(--ink)}
+.lead p+p{margin-top:12px}
+.interests{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{background:var(--accent-soft);color:#0f4a66;padding:2px 14px;border-radius:99px;font-size:14px}
+
+.entry{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.entry:last-child{border-bottom:0}
+.when{color:var(--muted);font-size:14px;font-weight:500;padding-top:3px}
+.entry h3{font-size:17px;font-weight:700;line-height:1.8}
+.where{color:var(--accent);font-size:14.5px}
+.entry p,.entry li{color:#33475a;font-size:15px}
+.entry ul{padding-inline-start:20px;margin-top:4px}
+
+.timeline .entry{position:relative}
+
+.projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.proj{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+.proj h3{font-size:16px;font-weight:700;margin-bottom:2px}
+.proj p{font-size:14.5px;color:#33475a;line-height:1.95}
+.proj .meta{font-size:13px;color:var(--muted);margin-top:8px}
+
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:12px 40px}
+.skill{display:flex;justify-content:space-between;gap:12px;font-size:15px;padding:6px 0;border-bottom:1px dashed var(--rule)}
+.skill span:last-child{color:var(--muted);font-size:13.5px}
+
+.pubs{list-style:none}
+.pubs li{padding:10px 0;border-bottom:1px solid var(--rule);font-size:15px;color:#33475a}
+.pubs li:last-child{border-bottom:0}
+
+footer{text-align:center;color:var(--muted);font-size:13px;padding:10px}
+
+/* Responsive */
+@media (max-width:860px){
+  .page{grid-template-columns:1fr;gap:24px}
+  aside{position:static}
+  .entry{grid-template-columns:1fr;gap:0}
+  .skills{grid-template-columns:1fr}
+}
+@media print{
+  body{background:#fff;font-size:12.5pt}
+  .page{display:block;padding:0}
+  aside{position:static;margin-bottom:20px;break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .nav,.btn{display:none}
+  .proj,.entry{break-inside:avoid}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <aside>
+    <div class="avatar">
+      <!-- برای افزودن عکس: <img src="photo.jpg" alt="تصویر [نام]"> را جایگزین span کنید -->
+      <span aria-hidden="true">ف</span>
+    </div>
+    <h1>[نام و نام خانوادگی]</h1>
+    <p class="role">دبیر فیزیک</p>
+
+    <!-- موج: نمادی از فیزیک موج‌ها -->
+    <svg class="wave" viewBox="0 0 260 26" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 13 C 16 -3, 32 -3, 48 13 S 80 29, 96 13 S 128 -3, 144 13 S 176 29, 192 13 S 224 -3, 240 13 S 256 24, 260 20" fill="none" stroke="#a9772b" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+
+    <ul class="contact">
+      <li><b>ایمیل</b><a href="mailto:name@example.com">name@example.com</a></li>
+      <li><b>تلفن</b><span dir="ltr">+98 9xx xxx xxxx</span></li>
+      <li><b>شهر</b><span>[شهر محل کار]</span></li>
+      <li><b>وب‌سایت</b><a href="#">[آدرس سایت]</a></li>
+    </ul>
+
+    <nav class="nav" aria-label="بخش‌های رزومه">
+      <a href="#about">درباره من</a>
+      <a href="#education">تحصیلات</a>
+      <a href="#experience">سوابق تدریس</a>
+      <a href="#projects">پروژه‌های آموزشی</a>
+      <a href="#skills">مهارت‌ها</a>
+      <a href="#honors">دوره‌ها و افتخارات</a>
+    </nav>
+    <button class="btn" onclick="window.print()">ذخیره به‌صورت PDF</button>
+  </aside>
+
+  <main>
+    <section id="about">
+      <h2>درباره من</h2>
+      <div class="lead">
+        <p>دبیر فیزیک با [X] سال سابقهٔ تدریس در مقطع [متوسطه اول / دوم]. تمرکز من بر آموزش مفهومی فیزیک، ارتباط دادن قوانین با پدیده‌های روزمره و استفاده از شبیه‌سازی‌های تعاملی برای یادگیری فعال است.</p>
+        <p>علاقه‌مندم دانش‌آموزان به‌جای حفظ‌کردن فرمول‌ها، با آزمایش، مدل‌سازی و پرسش‌گری به درک عمیق‌تری از طبیعت برسند.</p>
+      </div>
+      <div class="interests">
+        <span class="tag">آموزش مفهومی فیزیک</span>
+        <span class="tag">شبیه‌سازی تعاملی</span>
+        <span class="tag">یادگیری مبتنی بر پروژه</span>
+        <span class="tag">آزمایشگاه و فعالیت عملی</span>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>تحصیلات</h2>
+      <div class="entry">
+        <div class="when">[۱۳۹۰ – ۱۳۹۴]</div>
+        <div>
+          <h3>کارشناسی [فیزیک / آموزش فیزیک]</h3>
+          <div class="where">[نام دانشگاه]</div>
+          <p>معدل: [__] — پایان‌نامه: [عنوان، در صورت وجود]</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">[۱۳۹۴ – ۱۳۹۶]</div>
+        <div>
+          <h3>کارشناسی ارشد [گرایش]</h3>
+          <div class="where">[نام دانشگاه]</div>
+          <p>عنوان پایان‌نامه: [عنوان] — استاد راهنما: [نام]</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="timeline">
+      <h2>سوابق تدریس</h2>
+      <div class="entry">
+        <div class="when">[۱۴۰۰ – اکنون]</div>
+        <div>
+          <h3>دبیر فیزیک</h3>
+          <div class="where">[نام مدرسه]، [شهر]</div>
+          <ul>
+            <li>تدریس فیزیک پایه [هفتم تا نهم / دهم تا دوازدهم] به حدود [N] دانش‌آموز</li>
+            <li>طراحی فعالیت‌های آزمایشگاهی و شبیه‌سازی‌های تعاملی برای کلاس</li>
+            <li>[دستاورد قابل‌اندازه‌گیری، مثلاً افزایش میانگین نمرات یا مشارکت در المپیاد]</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">[۱۳۹۷ – ۱۴۰۰]</div>
+        <div>
+          <h3>دبیر / مدرس</h3>
+          <div class="where">[نام مدرسه یا مؤسسه]</div>
+          <ul>
+            <li>[شرح مسئولیت‌ها و دستاوردها]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>پروژه‌های آموزشی</h2>
+      <div class="projects">
+        <article class="proj">
+          <h3>شبیه‌ساز مدار الکتریکی</h3>
+          <p>محیط تعاملی ساخت مدارهای متوالی و موازی، با فارسی‌سازی کامل برای تمرین دانش‌آموزان.</p>
+          <div class="meta">HTML5 Canvas · جاوااسکریپت · <a href="#">مشاهده</a></div>
+        </article>
+        <article class="proj">
+          <h3>شبیه‌ساز پرش روی سیارات</h3>
+          <p>مقایسهٔ شتاب گرانشی سیارات از راه پرش مجازی؛ ابزاری برای آموزش مفهوم گرانش به دانش‌آموزان ۱۳ ساله.</p>
+          <div class="meta">HTML5 Canvas · جاوااسکریپت · <a href="#">مشاهده</a></div>
+        </article>
+        <article class="proj">
+          <h3>[عنوان پروژه یا مقاله]</h3>
+          <p>[توضیح کوتاه دو جمله‌ای دربارهٔ هدف و نتیجه]</p>
+          <div class="meta">[ابزارها] · <a href="#">پیوند</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>مهارت‌ها</h2>
+      <div class="skills">
+        <div class="skill"><span>مکانیک و دینامیک</span><span>تدریس تخصصی</span></div>
+        <div class="skill"><span>الکتریسیته و مغناطیس</span><span>تدریس تخصصی</span></div>
+        <div class="skill"><span>نور و فیزیک نوین</span><span>تدریس تخصصی</span></div>
+        <div class="skill"><span>طراحی شبیه‌سازی (HTML/JS)</span><span>پیشرفته</span></div>
+        <div class="skill"><span>PhET و Tracker</span><span>[سطح]</span></div>
+        <div class="skill"><span>LaTeX و تایپ علمی</span><span>[سطح]</span></div>
+        <div class="skill"><span>زبان انگلیسی</span><span>[سطح]</span></div>
+        <div class="skill"><span>پایتون برای تحلیل داده</span><span>[سطح]</span></div>
+      </div>
+    </section>
+
+    <section id="honors">
+      <h2>دوره‌ها و افتخارات</h2>
+      <ul class="pubs">
+        <li>[۱۴۰۲] دورهٔ «[عنوان دوره]» — [برگزارکننده]، [N] ساعت</li>
+        <li>[۱۴۰۱] معلم برتر / تقدیرنامه — [نهاد]</li>
+        <li>[۱۳۹۹] ارائهٔ مقاله یا کارگاه: «[عنوان]» — [همایش]</li>
+      </ul>
+    </section>
+
+    <footer>© <span id="y"></span> [نام و نام خانوادگی]</footer>
+  </main>
+</div>
+<script>document.getElementById('y').textContent=new Date().toLocaleDateString('fa-IR',{year:'numeric'});</script>
+</body>
+</html>
